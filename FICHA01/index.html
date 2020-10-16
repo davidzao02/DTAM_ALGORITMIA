@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha 01</title>
+</head>
+
+<body>
+    <script>
+        //1º Exercício
+        console.log(`Olá JavaScript!`)
+
+
+        //2º Exercício
+        let admin, name = 'John'
+
+        //name = 'John'
+
+        admin = name
+
+        console.log(admin);
+
+        let planetName = 'Earth',
+            currentVisitorName
+
+        //3º Exercício
+
+        const birthday = '19.04.1982'
+        const age = "dsdsds"
+
+        //4º Exercício
+
+        name = 'Ilya'
+        console.log(`hello ${1}`);
+        console.log(`hello ${"name"}`);
+        console.log(`hello ${name}`);
+
+        //5º Exercício
+        console.log("" + 1 + 0); //10
+        console.log("" - 1 + 0); //-1
+        console.log(true + false); //1
+        console.log(6 / "3"); //2
+        console.log("2" * "3"); //6
+        console.log(4 + 5 + "px"); //9px
+        console.log("4" - 2); //2
+        console.log("4px" - 2); //NaN
+        console.log(7 / 0); //Infinity
+        console.log("-9" + 5); //-95
+        console.log("-9" - 5); //-14
+        console.log(null + 1); //1
+        console.log(undefined + 1); //NaN
+
+        //6º Exercício 
+
+        let a = 1, //a = 1
+            b = 1 //b = 1
+
+        let c = ++a // c = 2
+        let d = b++ //d = 1
+
+        a = 2
+        let x = 1 + (a *= 2) //x = 5    a = 4
+
+        console.log(a);
+
+        //7º Exercício
+
+        name = prompt("Digite um nome!")
+
+        console.log(`***${name}***`);
+
+        //8º Exercício
+
+        console.log(5 > 4); //true
+        console.log("apple" > "pineapple"); //false
+        console.log("2" > "12"); //false
+        console.log(undefined == null); //true
+        console.log(undefined === null); //true
+        console.log(null == "\n0\n"); //false
+        console.log(null === "\n0\n"); //false
+
+        //9º Exercício
+
+        if ("0") { //Qualquer string é convertida para true
+            alert('Hello')
+        }
+
+        let answer = prompt(`What's the "oficial" name of JavaScript?`)
+
+        if(answer == `ECMAScript`){
+            alert(`Right!`)
+        }else{
+            alert(`You don't know? "ECMAScript"!`)
+        }
+
+        let value = prompt("Digite um número")
+
+        if(value > 0){
+            alert(1);
+        }else if(value < 0){
+            alert(-1);
+        }else{
+            alert(0);
+        }
+
+        let result = a + b < 4 ? "Below" : "Over"
+
+        alert(result)
+    </script>
+</body>
+
+</html>
