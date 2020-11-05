@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.3</title>
+</head>
+
+<body>
+    <script>
+        //Exercício 3
+
+        let temp = +prompt("Digite a sua temperatura corporal")
+
+        if (temp <= 35) {
+            console.log("Hipotermia");
+        } else if (temp >= 36 && temp <= 37.5) {
+            console.log("Normal");
+        } else if (temp >= 37.6 && temp <= 39.5) {
+            console.log("Febre");
+        } else if (temp >= 39.6 && temp < 41) {
+            console.log("Febre Alta");
+        } else if (temp >= 41){
+            console.log("Hipertermia");
+        }else{
+            console.log("Valor inválido");
+        }
+    </script>
+</body>
+
+</html>

@@ -95,7 +95,7 @@
         //     alert(`You don't know? "ECMAScript"!`)
         // }
 
-        // let value = prompt("Digite um número")
+        // let value = +prompt("Digite um número")
 
         // if (value > 0) {
         //     alert(1);
@@ -196,33 +196,51 @@
         //     value = prompt("Digite um número maior do que 100")
         // }
 
-            //CORRIGIR
+        //CORRIGIR
 
-        // let i, o, count
+        let i, o, count, nums
 
-        // let n = prompt("Digite um número")
+        let n = prompt("Digite um número")
 
-        // let value = [1]
+        let value = new Array()
+
+        function primeNumbers(num) {
+            for (i = 1; i <= num; i++) {
+                if (isPrime(i)) {
+                    value.push(i);
+                }
+            }
+            return numbers;
+        }
+
+        function isPrime(num) {
+            for (i = 2; i < num; i++)
+                if (num % i === 0) {
+                    return false
+                };
+            return num > 1;
+        }
+        alert(primeNumbers(13));
+
 
         // for (i = 2; i <= n; i++) {
         //     o = 0
         //     count = 0
         //     for (o = 1; o <= n; o++) {
-        //         if (n % o == 0) {
-        //             count++;
+        //         if (n % o === 0) {
+        //             isPrime = false
         //         }
         //     }
-
-        //     if (count == 2) {
+        //     if(isPrime == true){
         //         value.push(i)
         //     }
         // }
 
-        // for(i=0;i<=value.length;i++){
-        //     let nums = "" + value[i]
+        // for (i = 0; i <= value.length; i++) {
+        //     nums = "" + value[i]
         // }
 
-        // alert("Números Primos: " + nums)
+        // alert("Números Primos: " + value)
 
         //12º Exercício
 
@@ -249,7 +267,7 @@
         //     default:
         //         break;
         // }
-            //teste
+        //teste
     </script>
 </body>
 

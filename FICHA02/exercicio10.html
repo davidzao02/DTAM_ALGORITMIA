@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.10</title>
+</head>
+
+<body>
+    <script>
+        //Exercício 10
+
+        let num = +prompt("Digite um número")
+
+        let div = 0
+
+        for (let i = 0; i <= num; i++) {
+            if (num % i == 0) {
+                div++
+            }    
+        }
+
+        if (div == 2) {
+            console.log("É PRIMO");
+        }else{
+            console.log("NÃO É PRIMO");
+        }
+
+    </script>
+</body>
+
+</html>
