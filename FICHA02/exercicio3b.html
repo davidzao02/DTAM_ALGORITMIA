@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.3b</title>
+</head>
+
+<body>
+    <script>
+        function pow(num1, exponent) {
+            return Math.pow(num1, exponent)
+        }
+
+        let value = +prompt("Digite o valor")
+        let expo = +prompt("Digite o expoente")
+
+        while (expo < 1) {
+            expo = +prompt("O expoente deve ser superior a 1! Digite um valor válido!")
+        }
+
+        console.log(pow(value, expo));
+
+        // do {
+        //     if (expo < 1) {
+        //         expo = +prompt("O expoente deve ser superior a 1! Digite um valor válido!")
+        //     } else {
+        //         console.log(pow(value, expo)); 
+        //         break
+        //     }
+        // } while (expo < 1);
+    </script>
+</body>
+
+</html>

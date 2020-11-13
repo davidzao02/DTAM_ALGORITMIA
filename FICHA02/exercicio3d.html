@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.3d</title>
+</head>
+
+<body>
+    <script>
+        function isPerfect(num) {
+            let sum = 0
+
+            for (let i = 0; i < num; i++) {
+                if(num % i == 0){
+                    sum += i
+                }
+            }
+
+            if (sum == num) {
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        let value = +prompt("Digite um valor para verificar se é um número perfeito!")
+        
+        while (!isPerfect(value)) {
+            value = +prompt("O número não é perfeito, digite outro valor!")
+        }
+
+        alert(`O valor ${value} é um número perfeito!`);
+
+        // do{
+        //     let value = +prompt("Digite um valor para verificar se é um número perfeito!")
+
+        //     if(isPerfect(value)){
+        //         console.log("O valor é um número perfeito!");
+        //         break;
+        //     }else{
+        //         console.log("O valor não é um número perfeito, digite outro valor!");
+        //     }
+        // }while(!isPerfect(value))
+    </script>
+</body>
+
+</html>

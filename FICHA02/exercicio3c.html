@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.3c</title>
+</head>
+
+<body>
+    <script>
+        function isLeapYear(year) {
+            return ((year % 100 == 0) && (year % 4 == 0) && (year % 400 == 0))
+        }
+
+        let yr = +prompt("Digite o ano que deseja verificar")
+
+        if (isLeapYear(yr)) {
+            console.log("O ano é bissexto");
+        }else{
+            console.log("O ano não é bissexto");
+        }
+    </script>
+</body>
+
+</html>

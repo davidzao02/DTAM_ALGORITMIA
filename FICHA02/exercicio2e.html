@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.2e</title>
+</head>
+
+<body>
+    <script>
+        function showInterval(num1, num2) {
+            let interval = ""
+            for (let i = num1; i < num2; i++) {
+                if(i != num2-1){
+                    interval = interval + i + ","
+                }else{
+                    interval = interval + i
+                } 
+            }
+            console.log(interval)
+        }
+
+        let firstNumber = prompt("Digite o primeiro número do intervalo")
+        let secondNumber = prompt("Digite o segundo número do intervalo")
+
+        while (secondNumber <= firstNumber) {
+            secondNumber = prompt("O segundo valor deve ser maior do que o primero! Digite novamente o segundo número do intervalo")
+        }
+
+        showInterval(firstNumber, secondNumber)
+    </script>
+</body>
+
+</html>

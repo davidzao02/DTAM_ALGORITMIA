@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.2d</title>
+</head>
+
+<body>
+    <script>
+        function showEco(text, times) {
+            let message = ""
+            for (let i = 0; i < times; i++) {
+                message += text + " "
+            }
+            console.log(message);
+        }
+
+        let textMessage = prompt("Digite uma mensagem!")
+        let numTimes = +prompt("Digite o número de vezes que a mensagem deve ser imprimida")
+
+        showEco(textMessage, numTimes)
+    </script>
+</body>
+
+</html>

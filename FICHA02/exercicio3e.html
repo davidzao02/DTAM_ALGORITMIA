@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.3e</title>
+</head>
+
+<body>
+    <script>
+        function isPalindrome(num) {
+            let reverseNum = ""
+            for (let i = num.length - 1; i >= 0; i--) {
+                reverseNum += num[i]
+            }
+
+            if (reverseNum == num) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        let value = prompt("Digite um valor entre 100 e 999 para verificar se este é palíndromo!")
+
+        while (!(value <= 999 && value >= 100)){
+            value = prompt("ERRO! Deve digitar um valor entre 100 e 999!")
+        }
+
+        if (isPalindrome(value)) {
+            console.log(`O número ${value} é palíndromo!`);
+        } else {
+            console.log(`O número ${value} não é palíndromo!`);
+        }
+    </script>
+</body>
+
+</html>
