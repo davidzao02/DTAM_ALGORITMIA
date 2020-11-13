@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.12 e 13</title>
+</head>
+
+<body>
+    <script>
+        //Exercício 12 e 13
+
+        let num = Math.floor(Math.random() * 100) + 1
+        let answer = 0
+
+        let chance = 0
+
+        const NUM_ATTEMPTS = 5
+        do{
+            if (chance == 5) {
+                answer = +prompt("Tente adivinhar o número sorteado!")    
+            }else{
+                answer = +prompt(`Resposta errada! Resta-lhe ${chance} tentativa. Tente outra vez!`)
+            }
+            
+            if(answer > num){
+                console.log("PARA BAIXO");
+            }else if(answer < num){
+                console.log("PARA CIMA");
+            }else{
+                console.log("CERTO");
+            }
+
+            chance++
+            if(chance == 5){
+                console.log("Excedeu o número de tentativas!");
+            }
+        }while(chance != NUM_ATTEMPTS || answer != num)
+    </script>
+</body>
+
+</html>

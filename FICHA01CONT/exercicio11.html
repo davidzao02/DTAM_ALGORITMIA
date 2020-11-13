@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX.11</title>
+</head>
+
+<body>
+    <script>
+        //Exercício 11
+
+        let num1 = +prompt("Digite um número")
+        let num2 = +prompt("Digite outro número")
+        let operator = prompt("Digite o operador")
+
+        let calc = 0
+
+        // if (operator == "+") {
+        //     calc = num1 + num2
+        // } else if (operator == "*") {
+        //     calc = num1 * num2
+        // } else if (operator == "-") {
+        //     calc = num1 - num2
+        // } else if (operator == "/") {
+        //     calc = num1 / num2
+        // } else {
+        //     console.log("OPERADOR INVÁLIDO!");
+        // }
+
+        switch (operator) {
+            case "+":
+                calc = num1 + num2
+                break;
+            case "-":
+                calc = num1 - num2
+                break;
+            case "*":
+                calc = num1 * num2
+                break;
+            case "/":
+                if (num2 == 0) {
+                    console.log("OPERAÇÃO INVÁLIDA!");
+                } else {
+                    calc = num1 / num2
+                }
+                break;
+            default:
+                console.log("OPERADOR INVÁLIDO!");
+                break;
+        }
+
+        console.log(`${num1} ${operator} ${num2}`);
+    </script>
+</body>
+
+</html>

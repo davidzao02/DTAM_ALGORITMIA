@@ -13,16 +13,20 @@
 
         let num1 = +prompt("Digite um número")
         let num2 = +prompt("Digite outro número")
-
         let sum = 0
 
-        for (let i = num1; i <= num2; i++) {
-            if (i % 2 == 0) {
-                sum += i
-            }   
-        }
 
-        console.log(sum);
+        if (num1 == num2) {
+            num2 = +prompt("O segundo valor não deve ser igual ao primeiro. Volte a digitar um número")
+        } else {
+            for (let i = num1; i <= num2; i++) {
+                if (i % 2 == 0) {
+                    sum += i
+                }
+            }
+
+            console.log(`A soma dos nºs pares é ${sum}`);
+        }
     </script>
 </body>
 
