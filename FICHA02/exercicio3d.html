@@ -13,20 +13,20 @@
             let sum = 0
 
             for (let i = 0; i < num; i++) {
-                if(num % i == 0){
+                if (num % i == 0) {
                     sum += i
                 }
             }
 
             if (sum == num) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }
 
         let value = +prompt("Digite um valor para verificar se é um número perfeito!")
-        
+
         while (!isPerfect(value)) {
             value = +prompt("O número não é perfeito, digite outro valor!")
         }
