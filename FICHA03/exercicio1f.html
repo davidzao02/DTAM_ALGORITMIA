@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 1f</title>
+</head>
+<body>
+    <script>
+        let myStr = prompt('Escreva uma string?')
+        for (let i = 1; i < myStr.length - 1; i++) {
+            console.log(myStr.charAt(i));            
+        }
+        // Alternativa sem uso do método charAt (string como array de caracteres)
+        for (let i = 1; i < myStr.length - 1; i++) {
+            console.log(myStr[i]);            
+        }
+    </script>
+</body>
+</html>

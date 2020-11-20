@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 2a</title>
+</head>
+
+<body>
+    <script>
+        const countries = ['Portugal', 'Espanha', 'Ingla', 'Angola', 'França']
+
+        // alinea I)
+        console.log(countries.length);
+
+        // alinea II)
+        console.log(countries);
+        countries.push('Itália')
+        console.log(countries);
+
+        // alinea III)
+        console.log(countries);
+        //countries[2] = 'Inglaterra'
+        countries[countries.indexOf('Ingla')] = 'Inglaterra'        
+        console.log(countries);
+        
+        // alinea IV)
+        console.log(countries);
+        countries.splice(countries.indexOf('Angola'),1)
+        console.log(countries);
+        
+        // alinea V)
+        for (let i = 0; i < countries.length; i++) {
+            console.log(countries[i]);
+        }
+
+        // alinea VI
+        for (let i = 0; i < countries.length; i++) {
+            if (countries[i].endsWith('a')) {
+                console.log(countries[i]);
+            }
+        }
+
+        // alinea VII
+        countries.sort()
+        for (let i = 0; i < countries.length; i++) {
+            console.log(countries[i]);
+        }
+    </script>
+</body>
+
+</html>

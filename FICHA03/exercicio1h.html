@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 1h</title>
+</head>
+<body>
+    <script>
+        let count = 0
+        let myStr = prompt('Escreva uma string?')
+        let myChar = prompt('Escreva um caractere?')
+        for (let i = 0; i < myStr.length; i++) {
+            if (myStr[i] == myChar) {
+                count++       
+            }                        
+        }
+        console.log(`O número de ocorrências de ${myChar} é de ${count}`);
+    </script>
+</body>
+</html>

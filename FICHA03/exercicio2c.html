@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 2a</title>
+</head>
+
+<body>
+    <script>
+        const numbers = [4, 5, 12, -3, 34]
+
+        // alinea I
+
+        let sum = 0
+
+        for (let i = 0; i < numbers.length; i++) {
+            sum += numbers[i]
+        }
+
+        console.log(`A média dos números é ${sum/numbers.length}`);
+
+
+        // alinea II
+
+        let max = numbers[0]
+        let min = numbers[0]
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] < min) {
+                min = numbers[i]
+            }
+
+            if (numbers[i] > max) {
+                max = numbers[i]
+            }
+
+        }
+
+        console.log(`O valor mínimo do array é ${min} e o valor máximo é ${max}`);
+        // alinea III
+
+        let count = 0
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] < 0) {
+                count++
+            }
+        }
+
+        if (count == 1) {
+            console.log(`Existe apenas ${count} número negativo!`);
+        } else {
+            console.log(`Existem ${count} números negativos!`);
+        }
+
+        // alinea IV
+
+        let countNum = 0
+        let num1 = +prompt("Digite o primeiro número do intervalo")
+        let num2 = +prompt("Digite o segundo número do intervalo")
+
+        if (num1 > num2) {
+            temp = num2
+            num2 = num1
+            num1 = num2
+        }
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] > num1 && numbers[i] < num2) {
+                countNum++
+            }
+        }
+
+        if (countNum == 1) {
+            console.log(`Existe apenas ${countNum} número dentro do intervalo!`);
+        } else {
+            console.log(`Existem ${countNum} números dentro do intervalo!`);
+        }
+    </script>
+</body>
+
+</html>

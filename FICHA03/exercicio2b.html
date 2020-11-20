@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 2b</title>
+</head>
+
+<body>
+    <script>
+        let myStr
+        let words = []
+        do {
+            myStr = prompt("Digite uma string")
+
+
+            if (myStr != 'sair') {
+                words.push(myStr)
+            }
+        } while (myStr != 'sair');
+
+        console.table(words)
+    </script>
+</body>
+
+</html>

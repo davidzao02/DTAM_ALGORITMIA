@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 1g</title>
+</head>
+<body>
+    <script>
+        let count = 0
+         let myStr = prompt('Escreva uma string?')
+         myStr = myStr.toLowerCase()
+         for (let i = 0; i < myStr.length; i++) {
+             if (myStr[i] == 'a' || 
+             myStr[i] == 'e' ||
+             myStr[i] == 'i' ||
+             myStr[i] == 'o' ||
+             myStr[i] == 'u') {
+                 count++       
+             }                        
+         }
+         console.log(`O número de vogais é ${count}`);
+    </script>
+</body>
+</html>

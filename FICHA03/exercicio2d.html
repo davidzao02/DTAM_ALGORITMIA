@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 2d</title>
+</head>
+
+<body>
+    <script>
+        let park = [0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+        let pos = 0
+
+        while (park.indexOf(0) != -1) {
+            pos = +prompt("Digite o lugar que deseja a ocupar no parque (1-10)")
+
+            if (park[pos - 1] == 0) {
+                park[pos - 1] = 1
+                console.log(`O lugar ${pos} está livre, pode ocupá-lo!`);
+            } else {
+                console.log(`O lugar ${pos} está ocupado! Escolha outro!`);
+            }
+            console.log(park);
+        }
+
+        console.log("Todos os lugares foram ocupados!");
+    </script>
+</body>
+
+</html>
