@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 3</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>escola</th>
+            <th>local</th>
+        </tr>
+        <tr>
+            <td>ESMAD</td>
+            <td>Vila do Conde</td>
+        </tr>
+    </table>
+
+    <script>
+        // alinea b
+        // const table = `<table>
+        //                 <tr>
+        //                     <th>escola</th>
+        //                     <th>local</th>
+        //                 </tr>
+        //                 <tr>
+        //                     <td>ESMAD</td>
+        //                     <td>Vila do Conde</td>
+        //                 </tr>
+        //             </table>`
+
+        // const body = document.querySelector('body')
+        // body.innerHTML = table
+
+        // alinea c
+
+        // const tableHtml = document.querySelector('table')
+
+        // tableHtml.innerHTML += '<tr><td>ISEP</td><td>Porto</td></tr>'
+
+        // alinea d
+
+        // const tableCell = document.querySelector('td:last-of-type')
+
+        // tableCell.innerHTML += '/Póvoa do Varzim'
+
+        // alinea e
+
+        const table = document.querySelector('tbody')
+        const tableHeader = document.querySelector('tr:first-of-type')
+
+        table.removeChild(tableHeader)
+        
+    </script>
+</body>
+
+</html>

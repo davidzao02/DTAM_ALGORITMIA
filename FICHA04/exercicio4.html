@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 4</title>
+</head>
+
+<body>
+    <button id="button1">CLICA-ME</button>
+
+    <p id="paragraph"></p>
+
+    <input type="text" id="txtUser">
+
+    <script>
+        const btnClick = document.querySelector('#button1')
+        const txtUser = document.querySelector('#txtUser')
+        const paragraph = document.querySelector('#paragraph')
+
+        // alinea a
+        btnClick.addEventListener("click", function(){
+            alert('Olá Mundo!')
+        })
+
+        // alinea b
+        txtUser.addEventListener("input", function(){
+            paragraph.innerHTML = txtUser.value
+        })
+
+        // alinea c
+        btnClick.addEventListener("mouseup", function(){
+            console.log('Obrigado pelo clique no botão!');
+        })
+
+        // alinea d
+        window.addEventListener("load", function(){
+            
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 5</title>
+</head>
+<body>
+    <form>
+        <label for="txtName">Name:</label>
+        <input type="text" id="txtName" placeholder="Insira o nome do jogo" required>
+        <br>
+        <label for="txtYear">Ano:</label>
+        <input type="number" id="txtYear" required>
+        <br>
+        <label for="sltGenero">Género:</label>
+        <select id="sltGenero" min="1950" max="2020">
+            <option value="Ação">Ação</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Estratégia">Estratégia</option>
+            <option value="Desporto" selected>Desporto</option>
+            <option value="Simulação">Simulação</option>
+        </select>
+        <br>
+        <label for="txtImage">Imagem</label>
+        <input type="url" id="txtImage" placeholder="Digite o link da imagem">
+
+        <button type="submit">Adicionar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+            <th>Género</th>
+            <th>Capa</th>
+            <th>Opções</th>
+        </tr>
+    </table>
+</body>
+</html>
